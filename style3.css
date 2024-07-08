@@ -1,0 +1,80 @@
+*{
+        background-color: black;
+        color:white;
+        font-family: "Montserrat", sans-serif;
+        background-image: url("https://i.pinimg.com/originals/08/82/a8/0882a8afca6d55598b40baab25a38a55.gif");
+        
+    }
+body{
+    padding-left: 40px;
+    
+}
+@keyframes slide_up{
+    0%{
+        transform:translateY(300px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.back{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 40px;
+    text-decoration: none;
+}
+.container{
+    display:flex;
+    margin-right: 30px;
+    padding-top: 8%;
+    justify-content: space-between;
+    padding-right: 40px;
+    animation:slide_up 1.4s ease;
+}
+.left button{
+    background-image: none;
+    background-color: rgb(229, 21, 135);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding:10px; padding-left: 15px; padding-right: 15px;
+    border:none;
+    transition: .4s;
+    cursor:pointer;
+}
+.left button:hover{
+    transform:scale(1.1);
+    color:black;
+}
+.left a{
+    background-image: none;
+    background-color: rgb(229, 21, 135);
+    text-decoration: none;
+}
+.left a:hover{color:black;}
+.left{
+    padding-left: 50px; 
+    
+}
+.petimg,.feedimg,.bathimg{
+    height:50px; width:50px;
+    background-image: none;
+    display:none;
+}
+.cat{
+    background-image: url("real.gif");
+    height:250px; width:250px; border-radius: 20px;
+    background-size: contain;
+}
+.cat:hover{
+   background-image: url("blush.jpg");
+}
+.right{
+    height:360px; width:200px;
+    background-image: none;
+    background-color: rgb(229, 21, 135);
+    border-radius: 20px;
+    color:white;
+    padding:20px; font-weight: bold; text-align: center;
+}
